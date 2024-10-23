@@ -13,7 +13,7 @@ app.use(express.json())
 app.use(userRoutes)
 app.use(propertyRoutes)
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 app.get('/hello-server',(req,res)=>{
     res.send("hello from server")
