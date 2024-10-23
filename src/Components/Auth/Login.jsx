@@ -20,7 +20,7 @@ const Login = () => {
     e.preventDefault();
     setIsLoading(true);
     //change url for different endpoint
-    const url ="http://localhost:8080/login";
+    const url ="https://real-estate-21ik.onrender.com/login";
 
     const user = { email, password };
 

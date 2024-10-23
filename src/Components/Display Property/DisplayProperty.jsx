@@ -20,7 +20,7 @@ export function DisplayProperty({setUpdated}){
         }
     
         const getProperties = async ()=>{
-            let getPropertyUrl = "http://localhost:8080/get-property";
+            let getPropertyUrl = "https://real-estate-21ik.onrender.com/get-property";
           try{
             let properties = await fetch(getPropertyUrl,{
               method:'GET',
@@ -64,7 +64,7 @@ function PropertyDetails({displayProperty,ppdId,setUpdated}){
     const [displayBackupImage,setDisplayBackupImage] = useState(true)
 
     const handleEditProperty = ()=>{
-        let editPropertyPath = `http://localhost:8080/edit-property/${ppdId}`;
+        let editPropertyPath = `https://real-estate-21ik.onrender.com/edit-property/${ppdId}`;
         navigate(editPropertyPath,{replace:false})
     }
 
@@ -77,7 +77,7 @@ function PropertyDetails({displayProperty,ppdId,setUpdated}){
     }
 
     const handleDeleteProperty = async ()=>{
-        let deletePropertyUrl = `http://localhost:8080/delete-property/${ppdId}`;
+        let deletePropertyUrl = `https://real-estate-21ik.onrender.com/delete-property/${ppdId}`;
         let token = localStorage.getItem('token')
 
         if(!token){

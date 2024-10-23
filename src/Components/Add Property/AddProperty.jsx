@@ -26,7 +26,7 @@ export default function AddProperty({ppdId,setUpdated,setIsLoading}){
         }
     
         const getProperties = async ()=>{
-            let getPropertyUrl = "http://localhost:8080/get-property";
+            let getPropertyUrl = "https://real-estate-21ik.onrender.com/get-property";
           try{
             let properties = await fetch(getPropertyUrl,{
               method:'GET',
@@ -124,13 +124,13 @@ export const FormComponent = ({ formFields,currentForm,setCurrentForm,setFormDat
         formData.append('image', file);
       
         try {
-            let uploadUrl = "http://localhost:8080/upload";
+            let uploadUrl = "https://real-estate-21ik.onrender.com/upload";
             const response = await axios.post(uploadUrl, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data',
                 },
             });
-            let url= `http://localhost:8080/${response.data.url}`
+            let url= `https://real-estate-21ik.onrender.com/${response.data.url}`
 
             setFormData(data => ({
                 ...data,
@@ -255,7 +255,7 @@ export const FormComponent = ({ formFields,currentForm,setCurrentForm,setFormDat
         populatePropertyListData()
 
         if(ppdId){
-            let editPropertyUrl = `http://localhost:8080/edit-property/${ppdId}`;
+            let editPropertyUrl = `https://real-estate-21ik.onrender.com/edit-property/${ppdId}`;
             let updatedProperty = await fetch(editPropertyUrl,{
                 method:'PUT',
                 headers:{
@@ -278,7 +278,7 @@ export const FormComponent = ({ formFields,currentForm,setCurrentForm,setFormDat
             }
             return
         }
-        let addPropertyUrl = 'http://localhost:8080/add-property'
+        let addPropertyUrl = 'https://real-estate-21ik.onrender.com/add-property'
         let propertyAdded = await fetch(addPropertyUrl,{
             method:'POST',
             headers: {

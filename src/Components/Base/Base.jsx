@@ -37,7 +37,7 @@ function DashBoard(){
   const [isLoading,setIsLoading] = useState(true)
 
   useEffect(() => {
-    let testUrl = "http://localhost:8080/test";
+    let testUrl = "https://real-estate-21ik.onrender.com/test";
     const fetchUser = async () => {
       const token = localStorage.getItem('token'); 
       console.log(token)
@@ -80,7 +80,7 @@ function DashBoard(){
     }
 
     const getProperties = async ()=>{
-      let getPropertyUrl =" http://localhost:8080/get-property"
+      let getPropertyUrl =" https://real-estate-21ik.onrender.com/get-property"
       try{
         let properties = await fetch(getPropertyUrl,{
           method:'GET',
