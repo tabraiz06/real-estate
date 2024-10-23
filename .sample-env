@@ -1,0 +1,8 @@
+# This is the URL for connecting to the database
+DB_URL=your_database_url
+
+# This is the port number for the server
+PORT=your_port_number
+
+# This is your secret key for JWT 
+SECRET=your_secret_key
