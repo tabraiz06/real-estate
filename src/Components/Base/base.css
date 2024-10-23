@@ -1,0 +1,10 @@
+.main{
+    display: flex;             
+ }
+ .eleArea{
+     flex-grow: 1;           
+  }
+
+  body{
+    background-color: #e1f9f4;
+  }

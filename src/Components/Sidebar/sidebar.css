@@ -1,0 +1,50 @@
+
+body {
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;             
+}
+
+.sidebar {
+    width: 320px;
+    margin: 0;
+    background-color: #e1f9f4;
+    height: 100vh;
+    position: sticky;
+    top: 0; 
+}
+
+.button {
+    text-decoration: none;
+    display: block;
+    height: 50px;
+    width: 100%;
+    color: #AAAAAA;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.svg-icon {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+  margin-left: 45px
+}
+
+.button-name {
+    font-size: 18px;
+    margin-left: 24px;
+}
+
+.logo {font-size: 24px;
+    margin-left: 25px;
+    margin-top: 10px;
+    position: relative;
+    top: 57px;
+    left: 85px;
+    font-weight: 700;
+}
+
+.content {
+    padding: 20px;
+}

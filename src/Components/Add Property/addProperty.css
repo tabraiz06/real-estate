@@ -1,0 +1,150 @@
+.forms-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    height: 100%;
+}
+.form-navigation-bar{
+    display: flex;
+    border-radius: 50px;
+    background-color: white;
+    margin-top: 28px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0px;
+    border: 0px;
+    height: 50px;
+    gap: 50px;
+}
+
+.form-section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.form-navigation-section{
+    flex-grow: 1;
+    border-radius: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    font-weight: 550;
+    color: #b5b5b5;
+}
+
+.form-navigation-section:hover{
+    cursor: pointer;
+}
+
+
+.form-navigation-section span.sr-number{
+    display:block;
+    background-color: #c8f6f4;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 5px;
+}
+
+.field-container{
+    width: 200px;
+}
+
+.form-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    /* width: 550px; */
+    font-weight: 550;
+    color: #7d7d7d;
+  }
+.form-details label{
+    margin: 10px 0;
+}
+
+.form-details div{
+    min-width: 433px;
+}
+  
+
+  .button-container{
+    display: flex;
+    gap: 50px;
+    height: 25px;
+    padding: 18px;
+    margin: 15px;
+  }
+
+  .button-container button{
+    border:0px;
+    border-radius: 30px;
+    height: 40px;
+    padding: 14px;
+    font-weight: 500;
+  }
+
+.cancel-button{
+    background-color: rgb(106 180 248);
+    color: white;
+    width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.save-button{
+    background-color: rgb(76 87 182);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+.field-container-add-property{
+    min-height: 65px;
+}
+.field-container-select{
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    padding: 5px;
+}
+
+.field-container-select select{
+    min-height: 40px;
+}
+
+div .active{
+    background-color: #6ab4f8;
+}
+
+.form-navigation-section.active{
+    color: white;
+}
+
+.form-navigation-section .sr-number.active{
+    background-color: white;
+    color: black;
+}
+
+.save-button:hover{
+    cursor: pointer;
+}
+
+.cancel-button:hover{
+    cursor: pointer;
+}
+.hideerr{
+    display: none;
+}
+.errdata{
+    color: red;
+}
+
+

@@ -1,0 +1,125 @@
+.display-container{
+    /* margin: 80px; */
+}
+
+.display-header{
+    text-align: center;
+}
+
+.display-header{
+
+}
+
+.editicon{
+    margin-left: 11px;
+}
+.viewImg{
+    padding: 5px;
+    /* border: 1px solid black; */
+    position: relative;
+    width: 301px;
+    margin-left: auto;
+    margin-right: auto;
+    max-height: 178px;
+    }
+    .viewImgCon{
+       display: flex;
+       justify-content: center;
+    }
+.section-data{
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 15%; */
+}
+
+.section-container{
+    display: flex;
+    flex-direction: column;
+    min-width: 1080px;
+    background-color: white;
+    margin: 20px 0;
+}
+
+.section-container.odd{
+    background-color: white;
+}
+
+.section-header{
+    display: flex;
+    justify-content: center;
+}
+
+/* .field-container{
+    display: flex;
+    gap:5px;
+    margin: 10px;
+} */
+
+.field-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 10px;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    min-width: 80%;
+}
+
+.field-container strong {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.field-container p {
+    color: #666;
+    font-size: 1em;
+    max-width:150px;
+    word-wrap: break-word;
+    margin-top: 0%;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.edit-property-button,.goto-home-button,.delete-property-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:0px;
+    border-radius: 50px;
+    padding: 20px;
+    font-weight: 600;
+    background-color: rgb(76 87 182);
+    color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    font-size: large;
+    width: 150px;
+    height: 70px;
+}
+
+.edit-property-button, .goto-home-button, .delete-property-button:hover{
+    cursor: pointer;
+}
+
+div.backup-house-svg-container{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+div.display-backup{
+    display: none;
+}

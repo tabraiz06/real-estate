@@ -1,0 +1,118 @@
+.PData{
+    display: flex;
+    height: 65px;
+    border-radius: 22px;
+    margin: 13px 20px 14px 20px;
+    align-items: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(3, 3, 3, 0.1);
+}
+.PData > * {
+    flex: 1;
+    padding: 10px; 
+  }
+  
+  .status{
+    display: flex;
+    background-color: #F5FAF5;
+    padding: 2px;
+    justify-content: center;
+    align-items: center;
+
+    
+    width: 60px; 
+  }
+  .search {
+    height: 42px;
+    width: 377px;    
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50px;
+    height: 50px;
+    /* margin: 10px; */
+    margin-left: 31px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+  .searchinput {
+    height: 52px;
+    height: 35px;
+    width: 338px;
+    border: 0px;
+    border-radius: 13px;
+    position: relative;
+ margin-left: 2px;
+  bottom: 13px;
+  font-size: 18px;
+  }
+  .searchicon {
+    height: 40px;
+    width: 29px;
+    position: relative;
+    top: 1px;
+  }
+  .searchinput:focus {
+    outline: 0px;
+    
+  }
+  .pdata{
+    display: flex;
+  }
+
+  .search-add-property-container{
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    margin-top: 13px;
+  }
+
+  .search-add-property-container button{
+    background-color: #6ab4f8;
+    color: white;
+    border-radius: 40px;
+    width: 160px;
+    height: 50px;
+    border: 0px;
+  }
+
+  .list-container{
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+  }
+
+  .search-add-property-container button{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  }
+
+  .search-add-property-container button:hover{
+    cursor: pointer;
+  }
+ 
+ .showImg{
+  display: block;
+  position: absolute;
+  
+  border:1px solid black ;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+ 
+  padding: 30px;
+ }
+ .showImg-ele{
+  width: 488px;
+  height: auto;
+  margin-top: 10px;
+ }
+ .cancel-icon {
+ 
+  width: 33px;
+  height: auto;
+  position: absolute;
+  top: 4px;
+  right: 29px;
+}
+
+.head{
+  color:#43649e;
+}
